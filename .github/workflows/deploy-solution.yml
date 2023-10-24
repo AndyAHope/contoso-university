@@ -21,5 +21,6 @@ jobs:
         with:
           environment-url: https://andrew-test.crm3.dynamics.com/
           app-id: 290869a0-a97a-4cf5-81bd-3e1e9f0017e8 
-          client-key: JXJ8Q~ZinVca-AZuP7nS~jVuq0wHZ.ppNauAIbC5  
+          client-key: JXJ8Q~ZinVca-AZuP7nS~jVuq0wHZ.ppNauAIbC5
+          tennant-id: e4d84d78-f540-4d53-89ef-4ab182b648e8 
           solution-file: contoso_university_core_managed.zip
