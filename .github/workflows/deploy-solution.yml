@@ -10,17 +10,17 @@ on:
 
 jobs:
   deploy:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     environment: production
     steps:
       - uses: dawidd6/action-download-artifact@v2
         with:
           workflow: pack-contoso-university-core-demo.yml
-          name: packed-solution
+          name: packed-solution      
       - uses: microsoft/powerplatform-actions/import-solution@v0
         with:
-          environment-url: https://andrew-test.crm3.dynamics.com/
-          app-id: 290869a0-a97a-4cf5-81bd-3e1e9f0017e8 
-          client-secret: JXJ8Q~ZinVca-AZuP7nS~jVuq0wHZ.ppNauAIbC5
-          tenant-id: e4d84d78-f540-4d53-89ef-4ab182b648e8 
+          environment-url: ${{ secrets.APPURL }}
+          app-id: ${{ secrets.APPID }}
+          client-secret: ${{ secrets.SECRET }}
+          tenant-id: ${{ secrets.TENANTID }} 
           solution-file: contoso_university_core_managed.zip
