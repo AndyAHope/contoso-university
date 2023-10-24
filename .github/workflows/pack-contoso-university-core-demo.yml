@@ -1,4 +1,4 @@
-- name: pack Contoso_University_Core
+name: pack Contoso_University_Core
 
 on:
   Push:
