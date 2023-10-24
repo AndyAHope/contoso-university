@@ -2,7 +2,7 @@
   "EnvironmentVariables": [
     {
       "SchemaName": "ce_ContosoTestingVariable001",
-      "Value": "testing123"
+      "Value": "testing1234"
     },
     {
       "SchemaName": "cu_ContosoUniversitySPOITList",
