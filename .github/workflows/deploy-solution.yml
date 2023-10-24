@@ -18,9 +18,9 @@ jobs:
           workflow: pack-contoso-university-core-demo.yml
           name: packed-solution
       - name: install power platform tool
-        uses: microsoft/powerplatform-actions/actions-install@1.2.0
+        uses: microsoft/powerplatform-actions/actions-install@v1.2.0
       - name: Import contoso core
-        uses: microsoft/powerplatform-actions/import-solution@v1.2
+        uses: microsoft/powerplatform-actions/import-solution@v1.2.0
         with:
           environment-url: ${{ secrets.APPURL }}
           app-id: ${{ secrets.APPID }}
